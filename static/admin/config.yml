@@ -8,7 +8,7 @@ public_folder: /img
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "src/pages/blog"
+    folder: "src/pages/blog-post"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -22,14 +22,14 @@ collections:
     label: "Product"
     folder: "src/pages/product"
     create: true
+    slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product"}
       - {label: Image, name: image, widget: image}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Purchase Link", name: "link", widget: "string"}
+      - {label: "Price", name: "price", widget: "number"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
   - name: "pages"
     label: "Pages"
