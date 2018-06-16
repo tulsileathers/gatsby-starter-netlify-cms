@@ -18,7 +18,19 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+  - name: "product"
+    label: "Product"
+    folder: "src/pages/product"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: Image, name: image, widget: image}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Purchase Link", name: "link", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
   - name: "pages"
     label: "Pages"
     files:
