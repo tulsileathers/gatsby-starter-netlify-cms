@@ -1,5 +1,5 @@
 ---
-templateKey: index 
+templateKey: 'index'
 path: /
 bannerImages:
   - image: /img/respect-thy-thorn.jpg
