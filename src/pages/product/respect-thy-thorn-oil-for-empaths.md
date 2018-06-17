@@ -1,11 +1,11 @@
 ---
-templateKey: blog-post
+templateKey: product
 image: /img/respect-thy-thorn.jpg
 title: Respect Thy Thorn / Oil for Empaths
 link: >-
   https://www.etsy.com/listing/610497383/respect-thy-thorn-oil-for-empaths?ref=shop_home_active_1
 date: '2018-06-16T12:50:05-04:00'
-description: Respect Thy Thorn / Oil for Empaths
+price: 18
 tags:
   - oil
 ---

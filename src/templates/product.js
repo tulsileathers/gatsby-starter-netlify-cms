@@ -11,6 +11,8 @@ export const ProductTemplate = ({
   description,
   tags,
   title,
+    image,
+    link,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -24,8 +26,13 @@ export const ProductTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            <img
+                style={{ borderRadius: '5px' }}
+                src={image}
+            />
             <p>{description}</p>
             <PostContent content={content} />
+            <a class="button" href={link}>Buy on Etsy</a>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -45,39 +52,45 @@ export const ProductTemplate = ({
   )
 }
 
-BlogPostTemplate.propTypes = {
+ProductTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  image: PropTypes.string,
+  price: PropTypes.number,
+  link: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
-const BlogPost = ({ data }) => {
+const Product = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <BlogPostTemplate
+    <ProductTemplate
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+      helmet={<Helmet title={`${post.frontmatter.title} | Product`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
+      image={post.frontmatter.image}
+      price={post.frontmatter.price}
+      link={post.frontmatter.link}
     />
   )
 }
 
-BlogPost.propTypes = {
+Product.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default BlogPost
+export default Product
 
 export const pageQuery = graphql`
-  query ProductQuery($id: String!) {
+  query ProductByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -86,6 +99,9 @@ export const pageQuery = graphql`
         title
         description
         tags
+        image
+        price
+        link
       }
     }
   }
