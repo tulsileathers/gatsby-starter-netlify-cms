@@ -6,7 +6,7 @@ export const IndexPageTemplate = ({ title, image, content, contentComponent }) =
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
+    <section className="section section--gradient is-marginless is-paddingless">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
