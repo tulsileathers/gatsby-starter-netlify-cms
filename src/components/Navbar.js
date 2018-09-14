@@ -37,11 +37,11 @@ class Navbar extends React.Component {
                         <img src={logo} alt=""  style={{  height: '100px' }}/>
                     </figure>
                 </Link>
-                <Link className={burgerClass} onClick={this.toggleMenuActive}aria-label="menu" aria-expanded="false">
+                <div className={burgerClass} onClick={this.toggleMenuActive}aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
-                </Link>
+                </div>
             </div>
             <div className={menuClass}>
             <div className="navbar-start">
