@@ -67,7 +67,7 @@ class Navbar extends React.Component {
                     <div className="navbar-end">
                         <a
                         className="navbar-item"
-                        href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
+                        href="https://www.instagram.com/sensitive_earth/"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -77,7 +77,7 @@ class Navbar extends React.Component {
                         </a>
                         <a
                             className="navbar-item"
-                            href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
+                            href="https://www.etsy.com/shop/sensitiveearth"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -87,7 +87,7 @@ class Navbar extends React.Component {
                         </a>
                         <a
                             className="navbar-item"
-                            href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
+                            href="https://www.facebook.com/sensitiveearth"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
