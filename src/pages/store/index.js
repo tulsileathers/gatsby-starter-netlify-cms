@@ -1,13 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
+import Layout from '../../components/Layout'
 
-export default class IndexPage extends React.Component {
+export default class StorePage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
     return (
+    <Layout>
       <section className="section">
         <div className="container">
           <div className="content">
@@ -40,11 +42,12 @@ export default class IndexPage extends React.Component {
             ))}
         </div>
       </section>
+     </Layout>
     )
   }
 }
 
-IndexPage.propTypes = {
+StorePage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
