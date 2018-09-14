@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import ClassNames from 'classnames'
 
 import { FaInstagram, FaEtsy, FaFacebook } from 'react-icons/fa';
 import logo from '../img/logo.png'
+import { Link } from 'gatsby'
 
 class Navbar extends React.Component {
     constructor(props) {

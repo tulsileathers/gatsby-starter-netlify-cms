@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import PhotoGrid from '../components/PhotoGrid'
+import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 /* export const IndexPageTemplate = ({ title, image, content, contentComponent }) => {
@@ -46,6 +47,7 @@ const IndexPageTemplate = ({ data }) => {
   const { markdownRemark: post } = data
 console.log(data.images)
     return (
+        <Layout>
         <section className="section section--gradient is-marginless is-paddingless">
             <div className="container">
                 <div className="columns">
@@ -71,6 +73,7 @@ console.log(data.images)
                 </div>
             </div>
         </section>
+        </Layout>
     )
 }
 
