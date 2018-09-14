@@ -30,11 +30,11 @@ class Navbar extends React.Component {
         });
 
         return (
-            <nav className="navbar is-transparent" style={{  height: '100px' }}>
+            <nav className="navbar is-transparent" style={{  height: '200px' }}>
             <div className="navbar-brand">
-                <Link to="/" className="navbar-item">
+                <Link to="/" className="navbar-item" id="navbar-logo">
                     <figure className="image">
-                        <img src={logo} alt=""  style={{  height: '100px' }}/>
+                        <img src={logo} alt=""  style={{height: '100px', width: '100px' }}/>
                     </figure>
                 </Link>
                 <div className={burgerClass} onClick={this.toggleMenuActive}aria-label="menu" aria-expanded="false">
