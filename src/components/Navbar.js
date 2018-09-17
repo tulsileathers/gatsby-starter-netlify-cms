@@ -48,7 +48,7 @@ class Navbar extends React.Component {
                 <Link className="navbar-item" to="/store">
                     Store
                 </Link>
-                <Link className="navbar-item" to="/healing_sessions">
+                <Link className="navbar-item" to="/healing-sessions">
                     Healing Sessions
                 </Link>
                 <Link className="navbar-item" to="/music">
