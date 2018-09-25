@@ -33,7 +33,7 @@ console.log(data.images)
                         </div>
                         <PhotoGrid gridItems={data.images.edges.map(edge => edge.node.childImageSharp)} />
                         
-                        <a href="https://www.instagram.com/sensitive_earth/" className="button is-large is-pulled-right">
+                      <a href="https://www.instagram.com/theangleking/" className="button is-large is-pulled-right">
                             <span>See more on </span>
                             <span className="icon is-medium">
                                 <FaInstagram/>
