@@ -32,7 +32,7 @@ export const ProductTemplate = ({
             />
             <p>{description}</p>
             <PostContent content={content} />
-            <a class="button" href={link}>Buy on Etsy</a>
+            <a class="button" href={link}>Add to cart</a>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
