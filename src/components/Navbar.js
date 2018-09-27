@@ -1,7 +1,7 @@
 import React from 'react'
 import ClassNames from 'classnames'
 
-import { FaInstagram, FaEtsy, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaEtsy, FaFacebook, FaShoppingBasket} from 'react-icons/fa';
 import logo from '../img/logo.png'
 import { Link } from 'gatsby'
 
@@ -58,46 +58,56 @@ class Navbar extends React.Component {
                     About
                 </Link>
                 <Link className="navbar-item" to="/blog">
-                            Blog
-                        </Link>
-                        <Link className="navbar-item" to="/connect">
-                            Connect
-                        </Link>
-                    </div>
-                    <div className="navbar-end">
-                        <a
-                        className="navbar-item"
-                        href="https://www.instagram.com/sensitive_earth/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <span className="icon">
-                            <FaInstagram/>
-                        </span>
-                        </a>
-                        <a
-                            className="navbar-item"
-                            href="https://www.etsy.com/shop/sensitiveearth"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="icon">
-                                <FaEtsy/>
-                            </span>
-                        </a>
-                        <a
-                            className="navbar-item"
-                            href="https://www.facebook.com/sensitiveearth"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="icon">
-                                <FaFacebook/>
-                            </span>
-                        </a>
-                    </div>
-                    </div>
-                </nav>
+                    Blog
+                </Link>
+                <Link className="navbar-item" to="/connect">
+                    Connect
+                </Link>
+                <a
+                  className="navbar-item snipcart-checkout"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span className="icon">
+                      <FaShoppingBasket/>
+                    </span>
+                </a>
+            </div>
+            <div className="navbar-end">
+                <a
+                className="navbar-item"
+                href="https://www.instagram.com/sensitive_earth/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <span className="icon">
+                    <FaInstagram/>
+                </span>
+                </a>
+                <a
+                    className="navbar-item"
+                    href="https://www.etsy.com/shop/sensitiveearth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span className="icon">
+                        <FaEtsy/>
+                    </span>
+                </a>
+                <a
+                    className="navbar-item"
+                    href="https://www.facebook.com/sensitiveearth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span className="icon">
+                        <FaFacebook/>
+                    </span>
+                </a>
+            </div>
+            </div>
+        </nav>
             )
     }
 }

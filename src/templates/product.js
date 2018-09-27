@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const ProductTemplate = ({
@@ -45,7 +46,7 @@ export const ProductTemplate = ({
               data-item-name={title}
               data-item-description={description}
               data-item-url={"localhost:8000" + path}>
-              Buy
+              Add to Cart
             </a>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -85,6 +86,7 @@ const Product = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
+    <Layout>
     <ProductTemplate
       content={post.html}
       contentComponent={HTMLContent}
@@ -99,6 +101,7 @@ const Product = ({ data }) => {
       path={post.frontmatter.path}
       link={post.frontmatter.link}
     />
+    </Layout>
   )
 }
 
