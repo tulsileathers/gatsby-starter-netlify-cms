@@ -1,7 +1,7 @@
 import React from 'react'
 import ClassNames from 'classnames'
 
-import { FaInstagram, FaEtsy, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaEtsy, FaFacebook, FaShoppingBasket} from 'react-icons/fa';
 import logo from '../img/logo.png'
 import { Link } from 'gatsby'
 
@@ -45,7 +45,7 @@ class Navbar extends React.Component {
                 </div>
             </div>
             <div className={menuClass}>
-            <div className="navbar-end">
+            <div className="navbar-start">
                 <Link className="navbar-item" to="/store">
                     Store
                 </Link>
@@ -55,19 +55,34 @@ class Navbar extends React.Component {
                 <Link className="navbar-item" to="/blog">
                             Blog
                 </Link>
+                <Link className="navbar-item" to="/connect">
+                    Connect
+                </Link>
                 <a
-                    className="navbar-item"
-                    href="https://www.instagram.com/theangleking/"
+                  className="navbar-item snipcart-checkout"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
+                    <span className="icon">
+                      <FaShoppingBasket/>
+                    </span>
+                </a>
+            </div>
+            </div>
+            <div className="navbar-end">
+            <a
+            className="navbar-item"
+            href="https://www.instagram.com/theangleking/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
                 <span className="icon">
                     <FaInstagram/>
                 </span>
                 </a>
             </div>
-            </div>
-                </nav>
+        </nav>
             )
     }
 }

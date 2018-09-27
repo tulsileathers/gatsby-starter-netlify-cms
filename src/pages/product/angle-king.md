@@ -2,10 +2,12 @@
 templateKey: product
 image: /img/angle-king.jpg
 title: Angle King
-link: >-
-  https://google.com
 date: '2018-06-16T12:50:05-04:00'
 price: 8
+id: 1
+path: "/angle-king"
+quantity: 5
+description: "The angler's angle"
 tags:
   - lurer
 ---

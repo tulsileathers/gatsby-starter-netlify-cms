@@ -3,17 +3,22 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 export const ProductTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
+    content,
+    contentComponent,
+    description,
+    title,
     image,
+    price,
     link,
-  helmet,
+    helmet,
+    tags,
+    quantity,
+    path,
+    id
 }) => {
   const PostContent = contentComponent || Content
 
@@ -32,7 +37,17 @@ export const ProductTemplate = ({
             />
             <p>{description}</p>
             <PostContent content={content} />
-            <a class="button" href={link}>Add to cart</a>
+            <a 
+              href='#' 
+              className='snipcart-add-item button'
+              data-item-id={id}
+              data-item-price={price}
+              data-item-image={image}
+              data-item-name={title}
+              data-item-description={description}
+              data-item-url={"localhost:8000" + path}>
+              Add to Cart
+            </a>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -53,31 +68,38 @@ export const ProductTemplate = ({
 }
 
 ProductTemplate.propTypes = {
-  content: PropTypes.string.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
-  title: PropTypes.string,
-  image: PropTypes.string,
-  price: PropTypes.number,
-  link: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
+    content: PropTypes.string.isRequired,
+    contentComponent: PropTypes.func,
+    description: PropTypes.string,
+    title: PropTypes.string,
+    image: PropTypes.string,
+    price: PropTypes.number,
+    helmet: PropTypes.instanceOf(Helmet),
+    tags: PropTypes.array,
+    quantity: PropTypes.number,
+    path: PropTypes.string,
+    id: PropTypes.string
 }
 
 const Product = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
+    <Layout>
     <ProductTemplate
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
       helmet={<Helmet title={`${post.frontmatter.title} | Product`} />}
+      id={post.frontmatter.id}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       image={post.frontmatter.image}
       price={post.frontmatter.price}
-      link={post.frontmatter.link}
+      quantity={post.frontmatter.quantity}
+      path={post.frontmatter.path}
     />
+    </Layout>
   )
 }
 
@@ -101,7 +123,8 @@ export const pageQuery = graphql`
         tags
         image
         price
-        link
+        quantity
+        id
       }
     }
   }
