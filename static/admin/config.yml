@@ -27,8 +27,10 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product"}
       - {label: Image, name: image, widget: image}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Path", name: "path", widget: "string"}
       - {label: "Price", name: "price", widget: "number"}
+      - {label: "Quantity", name: "quantity", widget: "number"}
+      - {label: "Id", name: "id", widget: "number"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
