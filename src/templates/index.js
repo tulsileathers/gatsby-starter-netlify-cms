@@ -8,37 +8,18 @@ import { FaInstagram } from 'react-icons/fa';
 
 const IndexPageTemplate = ({ data }) => {
   const { markdownRemark: post } = data
-console.log(data.images)
     return (
         <Layout>
         <section className="section section--gradient is-marginless is-paddingless">
             <div className="container">
                 <div className="columns">
-                    <div className="column is-10 is-offset-1">
-                        <div
-                            className="full-width-image-container margin-top-0"
-                            style={{ backgroundImage: `url(${post.frontmatter.bannerImage})` }}
-                        >
-                            <h2
-                                className="has-text-weight-bold is-size-1"
-                                style={{
-                                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                                    backgroundColor: '#f40',
-                                    color: 'white',
-                                    padding: '1rem',
-                                }}
-                            >
-                                {post.frontmatter.description}
-                            </h2>
-                        </div>
-                        <PhotoGrid gridItems={data.images.edges.map(edge => edge.node.childImageSharp)} />
-                        
-                        <a href="https://www.instagram.com/sensitive_earth/" className="button is-large is-pulled-right">
-                            <span>See more on </span>
-                            <span className="icon is-medium">
-                                <FaInstagram/>
-                            </span>
-                        </a>
+                  <div className="column is-6 is-offset-3 has-text-centered">
+                        <h1 className="is-size-1">
+                            {post.frontmatter.title}
+                        </h1>
+                        <h2>
+                            {post.frontmatter.description}
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -57,16 +38,9 @@ export const indexPageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
         frontmatter {
-            bannerImage
+            title
             description
       }
-    }
-    images: allFile(filter: {relativeDirectory: {eq: "instagram"}}) {
-        edges {
-            node {
-            ...SquarePhoto
-            }
-        }
     }
   }
 `

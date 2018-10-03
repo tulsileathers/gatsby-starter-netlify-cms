@@ -1,6 +1,6 @@
 ---
 templateKey: index
-bannerImage: /img/chemex.jpg
-description: 'Sensitive Earth Healing Arts '
+title: 'Sensitive Earth Healing Arts'
+description: 're-connecting people with the healing power of plants, song, stones & the flow of universal life-force energy'
 ---
 
