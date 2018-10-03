@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
+import Layout from '../components/Layout'
 import { Link, graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -18,6 +19,7 @@ export const ProductTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
+    <Layout>
     <section className="section">
       {helmet || ''}
       <div className="container content">
@@ -49,6 +51,7 @@ export const ProductTemplate = ({
         </div>
       </div>
     </section>
+      </Layout>
   )
 }
 

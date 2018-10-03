@@ -13,11 +13,11 @@ const IndexPageTemplate = ({ data }) => {
         <section className="section section--gradient is-marginless is-paddingless">
             <div className="container">
                 <div className="columns">
-                  <div className="column is-6 is-offset-3 has-text-centered">
+                  <div className="column is-8 is-offset-2 has-text-centered">
                         <h1 className="is-size-1">
                             {post.frontmatter.title}
                         </h1>
-                        <h2>
+                        <h2 className="is-size-2 is-italic">
                             {post.frontmatter.description}
                         </h2>
                     </div>
