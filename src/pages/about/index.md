@@ -12,7 +12,6 @@ and heal from the hurt <br>
 <div class="column is-1 has-padding-left">
 - Violet Song, JF
 </div>
-</div>
 
 Sensitive Earth stems resiliently from the grief endured in this age of the Anthropocene, where the human being has been disconnected from that which offers us life.  Our mission is to reconnect human beings with the healing power that the living and feeling Earth offers us.  We do this through the mediums of life-force energy, plants, stones, sound & song. 
 
