@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { DisclaimerPageTemplate } from '../../templates/disclaimer-page'
+import { AboutPageTemplate } from '../../templates/about-page'
 
-const DisclaimerPagePreview = ({ entry, widgetFor }) => (
-  <DisclaimerPageTemplate
+const AboutPagePreview = ({ entry, widgetFor }) => (
+  <AboutPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />
 )
 
-DisclaimerPagePreview.propTypes = {
+AboutPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 }
 
-export default DisclaimerPagePreview
+export default AboutPagePreview

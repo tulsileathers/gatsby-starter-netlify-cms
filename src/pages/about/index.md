@@ -9,13 +9,17 @@ with the earth <br>
 that we weave our art <br>
 and heal from the hurt <br>
 </div>
-<div class="column is-1 has-padding-left">
-- Violet Song, JF
+<div>
+- Violet Song, JF <br>
 </div>
 
+
+<br>
 Sensitive Earth stems resiliently from the grief endured in this age of the Anthropocene, where the human being has been disconnected from that which offers us life.  Our mission is to reconnect human beings with the healing power that the living and feeling Earth offers us.  We do this through the mediums of life-force energy, plants, stones, sound & song. 
 
+
 # About Jordann
+
 
 Although she was born as the seventh-generation of a farming family, Jordann grew up with playgrounds of ash-mountains. These were the remnants of the common-place coke & coal mines of Southwestern Pennsylvania, which continue to be created to this day. 
 In the wake of unspoken trauma, Jordann’s family was the first to not live with the land after moving to America.  This, however, did not prevent Jordann from seeking refuge in wild places-- abandoned and unkempt from mining, yet resiliently scattered with trees and fields.  Since this young age, Jordann felt a deep connection to plants and the Earth, recognizing their capacity to heal her inner wounds.  Yet with this connection came grief, as she realized that others in her community sought monetary gain from fracking and mining practices-- viewed as essential for the economy and the working man-- and thus refused to acknowledge the Earth as a sensitive being.  Explain- what good is the health of the economy if we sacrifice the health of the land and water from which we truly heal and live?
@@ -29,10 +33,11 @@ she longs to be heard <br>
 it’s where our healing begins <br>
 just sit still and listen <br>
 </div>
-<div class="column is-1 has-padding-left">
+<div>
     -  sensitive earth, JF
 </div>
 
+<br>
 <div class="has-text-grey">
 Credentials: After intuiting her innate healing abilities, Jordann became a certified Reiki Master and Crystal Healer in 2015. She studied intensively in India with Usha Dobhal (ranked World's Best Reiki Master in 2016). Jordann has been immersed in the formal studies of Plant Medicine and Botany since 2013, studying at Vassar College, the Asheville School of Holistic Herbalism, the Clearpath School of Herbal Medicine, and the Evolutionary School of Herbalism. She also has degrees in Religious Studies and Cognitive Science with a focus on Mindfulness Meditation from Vassar College, which further rounds out her knowledge as a healing artist.
 </div>

@@ -13,7 +13,7 @@ export default class StorePage extends React.Component {
       <section className="section">
         <div className="container">
           <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Featured Products</h1>
+            <h1 className="has-text-weight-bold is-size-2">Medicine & Stories</h1>
           </div>
           {posts
             .map(({ node: post }) => (
@@ -28,14 +28,14 @@ export default class StorePage extends React.Component {
                       src={post.frontmatter.image}
                   />
                 <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
+                  <Link className="has-text-black" to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
                 </p>
                 <p>
                     {/* {post.excerpt} */}
-                  <Link className="button is-small" to={post.fields.slug}>
-                      View Product
+                  <Link className="button is-medium" to={post.fields.slug}>
+                      View
                   </Link>
                 </p>
               </div>
